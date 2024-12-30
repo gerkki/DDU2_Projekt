@@ -43,3 +43,16 @@
 input {
     text-align: center;
 }
+
+.numbers_div {
+    display: grid;
+    gap: 10px;
+    grid-template-columns: repeat(19, 1fr);
+}
+
+.numbers_div div {
+    background-color: lightgray;
+    text-align: center;
+    padding: 10px;
+    border-radius: 10px;
+}

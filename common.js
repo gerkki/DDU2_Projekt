@@ -17,3 +17,13 @@ createGridButton.textContent = "Create";
 controlsDiv.appendChild(createGridButton);
 
 const numbersDiv = document.getElementById("numbers");
+
+createGridButton.addEventListener("click", function e() {
+    numbersDiv.innerHTML = "";
+    for (let i = 0; i < gridInputBox.value; i++) {
+        let numberBox = document.createElement("div");
+        let randomNumber = generateRandomNumber();
+        numberBox.textContent = randomNumber;
+        numbersDiv.appendChild(numberBox);
+    }
+});
