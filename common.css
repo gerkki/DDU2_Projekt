@@ -1,0 +1,36 @@
+@font-face {
+    font-family: Montserrat;
+    src: url(Montserrat-VariableFont_wght.ttf);
+}
+
+body {
+    font-family: Montserrat;
+}
+
+.menu {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.menu a {
+    text-decoration: none;
+    background-color: #172049;
+    color: #ffffff;
+    padding: 10px;
+    border-radius: 10px;
+    flex-basis: 10%;
+    text-align: center;
+}
+
+.menu a:hover {
+    background-color: #5e81ff;
+}
+
+.menu a.external_link {
+    background-color: #5e81ff;
+}
+
+.menu a.external_link:hover {
+    color: #333333;
+}
