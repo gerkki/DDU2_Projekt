@@ -3,14 +3,12 @@
     src: url(Montserrat-VariableFont_wght.ttf);
 }
 
-body {
-    font-family: Montserrat;
-}
-
 .menu {
+    font-family: Montserrat;
     display: flex;
     justify-content: center;
     gap: 10px;
+    padding-bottom: 25px;
 }
 
 .menu a {
@@ -33,4 +31,15 @@ body {
 
 .menu a.external_link:hover {
     color: #333333;
+}
+
+.controls_div {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+input {
+    text-align: center;
 }
