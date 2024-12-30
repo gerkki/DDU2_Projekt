@@ -1,3 +1,7 @@
+function generateRandomNumber() {
+    return Math.floor(Math.random() * 99) + 1;
+}
+
 const controlsDiv = document.getElementById("controls");
 const howManyParagraph = document.createElement("p");
 howManyParagraph.textContent = "How many numbers in the grid?";
@@ -11,3 +15,5 @@ controlsDiv.appendChild(gridInputBox);
 const createGridButton = document.createElement("button");
 createGridButton.textContent = "Create";
 controlsDiv.appendChild(createGridButton);
+
+const numbersDiv = document.getElementById("numbers");
