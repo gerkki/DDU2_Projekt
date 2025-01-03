@@ -2,6 +2,16 @@ function generateRandomNumber() {
     return Math.floor(Math.random() * 99) + 1;
 }
 
+function generateGrid() {
+    numbersDiv.innerHTML = "";
+    for (let i = 0; i < gridInputBox.value; i++) {
+        let numberBox = document.createElement("div");
+        let randomNumber = generateRandomNumber();
+        numberBox.textContent = randomNumber;
+        numbersDiv.appendChild(numberBox);
+    }
+}
+
 const controlsDiv = document.getElementById("controls");
 const howManyParagraph = document.createElement("p");
 howManyParagraph.textContent = "How many numbers in the grid?";
@@ -17,13 +27,8 @@ createGridButton.textContent = "Create";
 controlsDiv.appendChild(createGridButton);
 
 const numbersDiv = document.getElementById("numbers");
+const allNumbersBoxes = document.getElementById("numbers").children;
 
 createGridButton.addEventListener("click", function e() {
-    numbersDiv.innerHTML = "";
-    for (let i = 0; i < gridInputBox.value; i++) {
-        let numberBox = document.createElement("div");
-        let randomNumber = generateRandomNumber();
-        numberBox.textContent = randomNumber;
-        numbersDiv.appendChild(numberBox);
-    }
+    generateGrid();
 });
