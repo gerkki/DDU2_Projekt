@@ -12,6 +12,15 @@ function generateGrid() {
     }
 }
 
+const nav = document.createElement("nav");
+nav.className = "menu";
+
+const homeLink = document.createElement("a");
+homeLink.href = "../index.html";
+homeLink.textContent = "Home";
+nav.appendChild(homeLink);
+document.body.insertBefore(nav, document.body.firstChild);
+
 const controlsDiv = document.getElementById("controls");
 const howManyParagraph = document.createElement("p");
 howManyParagraph.textContent = "How many numbers in the grid?";
