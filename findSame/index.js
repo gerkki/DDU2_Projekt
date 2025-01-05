@@ -32,3 +32,12 @@ numbersDiv.addEventListener("click", function (e) {
     const selectedNumber = e.target.textContent;
     findSameNumber(selectedNumber);
 })
+
+resetButton.addEventListener("click", function (e) {
+    for (let numberBox of allNumbersBoxes) {
+        if (numberBox.classList.contains("same_number")) {
+            numberBox.classList.remove("same_number");
+        }
+    }
+    sameTextP.textContent = "Click on a number to find copies";
+})
