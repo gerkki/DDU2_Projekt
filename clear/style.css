@@ -1,0 +1,17 @@
+#clear_controls {
+    margin-bottom: 20px;
+}
+
+.numbers_default:hover {
+    background-color: aqua;
+    cursor: pointer;
+}
+
+.clicked {
+    background-color: red;
+}
+
+.clicked:hover {
+    background-color: orange;
+    cursor: pointer;
+}
