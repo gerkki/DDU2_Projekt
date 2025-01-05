@@ -15,3 +15,12 @@
     padding-left: 100px;
     padding-right: 100px;
 }
+
+.orange {
+    background-color: orange;
+}
+
+.numbers_default:hover {
+    background-color: beige;
+    cursor: pointer;
+}

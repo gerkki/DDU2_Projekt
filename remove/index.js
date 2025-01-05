@@ -17,3 +17,21 @@ const removeNumberDisplay = document.createElement("div");
 removeNumberDisplay.textContent = "-";
 removeNumberDisplay.classList.add("remove_display");
 removeControlsContainer.appendChild(removeNumberDisplay);
+
+newNumberButton.addEventListener("click", function (e) {
+    newNumber = generateRandomNumber();
+    newNumberDisplay.textContent = newNumber;
+
+    for (let numberBox of allNumbersBoxes) {
+        if (numberBox.classList.contains("orange")) {
+            numberBox.classList.remove("orange");
+        }
+    }
+
+    for (let numberBox of allNumbersBoxes) {
+        if (numberBox.textContent == newNumber) {
+            numberBox.classList.add("orange");
+        }
+    }
+
+})
