@@ -47,7 +47,7 @@ input {
     grid-template-columns: repeat(19, 1fr);
 }
 
-.numbers_div div {
+.numbers_default {
     background-color: lightgray;
     text-align: center;
     padding: 10px;

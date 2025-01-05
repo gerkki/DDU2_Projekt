@@ -8,6 +8,7 @@ function generateGrid() {
         let numberBox = document.createElement("div");
         let randomNumber = generateRandomNumber();
         numberBox.textContent = randomNumber;
+        numberBox.classList.add("numbers_default");
         numbersDiv.appendChild(numberBox);
     }
 }

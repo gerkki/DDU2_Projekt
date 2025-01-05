@@ -1,4 +1,9 @@
-#sum_all_controls div {
+#sum_all_controls div,
+#sum_marked_controls div {
     border: 1px solid black;
     padding: 0px 30px;
+}
+
+.marked {
+    background-color: lightgreen;
 }
