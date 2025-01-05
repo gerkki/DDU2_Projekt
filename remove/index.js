@@ -19,6 +19,7 @@ removeNumberDisplay.classList.add("remove_display");
 removeControlsContainer.appendChild(removeNumberDisplay);
 
 newNumberButton.addEventListener("click", function (e) {
+    removeNumberDisplay.textContent = "-";
     newNumber = generateRandomNumber();
     newNumberDisplay.textContent = newNumber;
 
@@ -34,4 +35,24 @@ newNumberButton.addEventListener("click", function (e) {
         }
     }
 
-})
+});
+
+removeButton.addEventListener("click", function (e) {
+
+    let number = newNumberDisplay.textContent;
+    let amountOfTimes = 0;
+
+    for (let numberBox of allNumbersBoxes) {
+        if (numberBox.textContent == number) {
+            numberBox.classList.add("red");
+            numberBox.textContent = "X";
+            amountOfTimes++;
+        }
+    }
+
+    if (amountOfTimes == 0) {
+        removeNumberDisplay.textContent = "Nothing to remove";
+    } else {
+        removeNumberDisplay.textContent = `${number} removed ${amountOfTimes} times`;
+    }
+});

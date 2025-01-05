@@ -20,6 +20,10 @@
     background-color: orange;
 }
 
+.red {
+    background-color: red;
+}
+
 .numbers_default:hover {
     background-color: beige;
     cursor: pointer;
