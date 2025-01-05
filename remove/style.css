@@ -1,0 +1,17 @@
+#remove_controls {
+    margin-bottom: 20px;
+}
+
+#remove_controls div {
+    border: 1px solid black;
+}
+
+.number_display {
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+.remove_display {
+    padding-left: 100px;
+    padding-right: 100px;
+}
