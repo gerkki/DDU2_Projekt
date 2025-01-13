@@ -24,11 +24,13 @@ findButton.addEventListener("click", function (e) {
 
     for (let numberX of allNumbersBoxes) {
         for (let numberY of allNumbersBoxes) {
-            let sum = parseInt(numberX.textContent) + parseInt(numberY.textContent);
-            if (sum == inputNumber) {
-                numberX.classList.add("green");
-                numberY.classList.add("green");
-                return;
+            if (numberX !== numberY) {
+                let sum = parseInt(numberX.textContent) + parseInt(numberY.textContent);
+                if (sum == inputNumber) {
+                    numberX.classList.add("green");
+                    numberY.classList.add("green");
+                    return;
+                }
             }
         }
     }
